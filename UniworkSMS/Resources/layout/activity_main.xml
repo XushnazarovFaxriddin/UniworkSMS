@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/bg_header_custom" />
+    <EditText
+        android:layout_width="227.5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/logintxt"
+        android:hint="Login"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp" />
+    <Button
+        android:text="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/logintxt"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/StartBtn" />
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/StartBtn"
+        android:layout_alignRight="@+id/InfoBtn"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:textSize="20dp"
+        android:id="@+id/countTxt" />
+    <Button
+        android:text="Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_alignTop="@id/logintxt"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/InfoBtn" />
+    <android.webkit.WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_alignTop="@id/StartBtn"
+        android:id="@+id/webView" />
+</RelativeLayout>
